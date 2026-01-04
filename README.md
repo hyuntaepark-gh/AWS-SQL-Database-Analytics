@@ -24,7 +24,7 @@ Key objectives:
 
 ## 🧱 Project Structure
 
-'''
+```
 
 tradingdb-project/
 ├── schema/
@@ -39,7 +39,7 @@ tradingdb-project/
 │ └── system_flow_diagram.pdf
 └── README.md
 
-'''
+```
 
 ---
 
