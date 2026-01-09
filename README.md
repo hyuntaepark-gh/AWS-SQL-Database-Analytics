@@ -61,10 +61,12 @@ stock-trading-database/
 ---
 
 ## 📌 Key Skills Demonstrated
-- Database schema design
-- SQL query writing
-- Data normalization
-- Translating business logic into structured data models
+- ER Modeling
+- Relational Database Design
+- SQL (DDL, DML)
+- Primary / Foreign Keys
+- Many-to-Many Relationships
+- ISA Specialization
 
 ---
 
