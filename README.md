@@ -22,28 +22,6 @@ Key objectives:
 
 ---
 
-## 🧱 Project Structure
-
-```
-
-stock-trading-database/
-├─ README.md
-├─ ERD/
-│  └─ ER_Diagram.pdf
-├─ schema/
-│  └─ create_tables.sql
-├─ queries/
-│  ├─ basic_queries.sql
-│  ├─ joins.sql
-│  └─ advanced_queries.sql
-└─ docs/
-   ├─ database_overview.md
-   └─ assignment_summary.pdf
-
-```
-1,8,10,11,14,17
----
-
 ## 🧠 Database Design Highlights
 - Entity-Relationship (ER) modeling
 - Primary & foreign key constraints
@@ -75,3 +53,25 @@ This project was completed as part of academic coursework and refined for
 portfolio presentation.  
 Sensitive or irrelevant academic labels (e.g., "Homework") have been removed
 to emphasize real-world applicability.
+## 🧱 Project Structure
+
+---
+
+```
+
+stock-trading-database/
+├─ README.md
+├─ ERD/
+│  └─ ER_Diagram.pdf
+├─ schema/
+│  └─ create_tables.sql
+├─ queries/
+│  ├─ basic_queries.sql
+│  ├─ joins.sql
+│  └─ advanced_queries.sql
+└─ docs/
+   ├─ database_overview.md
+   └─ assignment_summary.pdf
+
+```
+1,8,10,11,14,17
