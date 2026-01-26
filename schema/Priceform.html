@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Query</title>
+</head>
+<body>
+    <h2>Stock Price Filter</h2>
+    <form action="/cgi-bin/pricequery.py" method="post">
+        <label>Date (YYYY-MM-DD):</label>
+        <input type="text" name="date">
+        <br><br>
+
+        <label>Closing Price ≤ :</label>
+        <input type="text" name="close">
+        <br><br>
+
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

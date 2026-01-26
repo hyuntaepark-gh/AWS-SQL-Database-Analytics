@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Excel – Trading DB Results</title>
+</head>
+<body>
+    <h1>Download Excel – Trading DB Results</h1>
+
+    <form action="/cgi-bin/download_excel.py" method="post">
+        <label>Date:</label>
+        <input type="text" name="date" placeholder="YYYY-MM-DD">
+        <br><br>
+
+        <label>Closing Price:</label>
+        <input type="text" name="close">
+        <br><br>
+
+        <input type="submit" value="Download Excel">
+    </form>
+</body>
+</html>
