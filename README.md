@@ -80,9 +80,12 @@ stock-trading-database/
 │  ├─ basic_queries.sql
 │  ├─ joins.sql
 │  └─ advanced_queries.sql
+├─ backend/
+│  ├─ db_connection.py
+│  ├─ query_handler.py
+│  └─ export_excel.py
 └─ docs/
-   ├─ database_overview.md
-   └─ assignment_summary.pdf
+   └─ database_overview.md
 
 ```
 1,8,10,11,14,17
