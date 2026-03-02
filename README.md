@@ -9,39 +9,28 @@
 ![ER Modeling](https://img.shields.io/badge/ER-Modeling-0A66C2)
 ![3NF](https://img.shields.io/badge/3NF-Normalization-6A1B9A)
 
-This repository showcases hands-on relational database design and cloud-based database application engineering.
+This repository demonstrates both:
 
-It demonstrates my ability to:
+- 📐 Relational database design (3NF, PK/FK, ISA, M:N)
+- ☁️ Cloud-based database application engineering (AWS EC2 + Apache + Python)
 
-- Design normalized relational schemas (3NF)
-- Implement primary and foreign key constraints
-- Deploy database-driven applications on AWS EC2
-- Build server-side SQL execution pipelines
-- Integrate Python-based data processing and Excel reporting
+It bridges database theory and production-style deployment.
 
 ---
 
 # 📁 Project: TradingDB – Relational Database & AWS Application
 
-## 🔍 Project Overview
+## 🔍 Overview
 
-The TradingDB project simulates a real-world business database managing:
+A simulated financial trading database managing:
 
 - Clients
 - Financial Officers
 - Contracts
-- Company Information
+- Contact Information
+- Company / Individual Client Types
 
-The project evolved from schema design into a cloud-hosted database web application deployed on AWS EC2.
-
-### Key Objectives
-
-- Design a normalized relational schema (3NF)
-- Define entity relationships and constraints
-- Write SQL queries to retrieve business insights
-- Deploy the database on AWS EC2
-- Implement a web-based SQL query interface
-- Enable Excel export using Python and Pandas
+Deployed as a live web-based SQL application on AWS EC2.
 
 ---
 
@@ -49,14 +38,14 @@ The project evolved from schema design into a cloud-hosted database web applicat
 
 ![System Architecture](screenshots/01-system-architecture-diagram.png)
 
-Architecture includes:
+Architecture:
 
-- AWS EC2 instance
-- Apache Web Server (CGI enabled)
-- MariaDB relational database
-- Python backend scripts
-- Pandas-based Excel export
-- Browser-based SQL interaction
+- AWS EC2
+- Apache Web Server (CGI)
+- MariaDB
+- Python backend
+- Pandas Excel export
+- Browser-based SQL interface
 
 ---
 
@@ -64,103 +53,90 @@ Architecture includes:
 
 ![EC2 SSH Login](screenshots/02-ssh-ec2-login.png)
 
-Live SSH connection demonstrating:
-
-- EC2 setup and configuration
-- Server-side deployment
-- Database installation
-
 ---
 
-# 📜 Apache Server Logging
+# 📜 Apache Logs
 
 ![Apache Access Log](screenshots/07-apache-access-log.png)
 
-Access logs confirm:
-
-- HTTP request handling
-- CGI execution
-- Client interaction tracking
-
 ---
 
-# 🌐 Web-Based SQL Interface
+# 🌐 Web SQL Interface
 
 ![SQL Query Form](screenshots/08-sql-query-form-page.png)
 
-A browser-based SQL interface allowing users to:
+---
 
-- Submit filtered queries
-- Retrieve structured data
-- Interact dynamically with the database
+# 📊 Query Example
+
+![Filled Search](screenshots/10-price-search-form-filled.png)
+
+![Query Result](screenshots/11-pricequery-result-table.png)
 
 ---
 
-# 🔎 Query Execution Example
+# 📥 Excel Export Pipeline
 
-![Filled Search Form](screenshots/10-price-search-form-filled.png)
+![Excel Download](screenshots/14-excel-download-form-empty.png)
 
-User-defined filtering conditions are validated and securely processed by the backend.
-
----
-
-# 📊 SQL Query Results
-
-![Query Results](screenshots/11-pricequery-result-table.png)
-
-Server-rendered HTML table displaying query results.
+![Excel Output](screenshots/17-excel-result-preview.png)
 
 ---
 
-# 📥 Excel Export Feature
-
-![Excel Download Form](screenshots/14-excel-download-form-empty.png)
-
-Users can generate downloadable Excel reports directly from query results.
-
----
-
-# 📄 Generated Excel Output
-
-![Excel Result Preview](screenshots/17-excel-result-preview.png)
-
-Example Excel file generated through:
-
-Database → Python → Pandas → Excel pipeline
-
----
-
-# 🐍 Python Backend Implementation
+# 🐍 Python Backend
 
 ## Database Connection
+![DB Connection](screenshots/18-python-db-connection-code.png)
 
-![Python DB Connection](screenshots/18-python-db-connection-code.png)
+## SQL Execution
+![SQL Fetch](screenshots/19-python-sql-query-fetch-code.png)
 
-## SQL Execution & Data Fetching
-
-![Python SQL Fetch](screenshots/19-python-sql-query-fetch-code.png)
-
-## Pandas Excel Export Logic
-
-![Pandas Excel Export](screenshots/20-python-pandas-export-excel-code.png)
+## Pandas Export
+![Pandas Export](screenshots/20-python-pandas-export-excel-code.png)
 
 ---
 
-# 🧠 Database Design Highlights
+# 🗂️ Relational Model Evidence
 
-- Entity-Relationship (ER) Modeling
-- Primary and Foreign Key Constraints
-- 3rd Normal Form (3NF) Normalization
+## Financial Officer Table
+![Financial Officer](screenshots/21-financial-officer-table.png)
+
+## Client Master Table
+![Client Master](screenshots/22-client-master-table.png)
+
+## Individual Client (ISA)
+![Individual Client](screenshots/23-individual-client-table.png)
+
+## Company Client (ISA)
+![Company Client](screenshots/24-company-client-table.png)
+
+## Contact Info (1:N)
+![Contact Info](screenshots/25-client-contact-info-table.png)
+
+## Contract Master
+![Contract Table](screenshots/26-contract-master-table.png)
+
+## Contract ↔ Client (M:N via Junction)
+![Contract Client Mapping](screenshots/27-contract-client-mapping-table.png)
+
+---
+
+# 🧠 Database Design Features
+
+- 3rd Normal Form (3NF)
+- Primary / Foreign Keys
+- ISA Specialization (Individual vs Company)
+- One-to-Many Relationships
 - Many-to-Many Relationships via Junction Tables
-- ISA Specialization
+- Referential Integrity Enforcement
 
 ---
 
-# 🛠️ Tools & Technologies
+# 🛠️ Technology Stack
 
 - AWS EC2
-- Apache Web Server
-- MariaDB (MySQL-compatible)
+- Apache (CGI)
+- MariaDB
 - SQL (DDL, DML)
 - Python
 - Pandas
@@ -168,18 +144,20 @@ Database → Python → Pandas → Excel pipeline
 
 ---
 
-# 📌 Key Skills Demonstrated
+# 🎯 Engineering Value
 
-- Relational Database Design
-- SQL Query Engineering
-- Cloud Deployment
-- Server Configuration
-- Backend Scripting
-- Data Processing Automation
-- Reporting Workflow Integration
+This project demonstrates:
 
+- Database schema design
+- Referential modeling
+- Cloud deployment
+- Backend integration
+- Data export automation
+- Production-style architecture thinking
 
-```
+---
+
+# 📂 Project Structure
 
 stock-trading-database/
 ├─ README.md
@@ -198,5 +176,4 @@ stock-trading-database/
 └─ docs/
    └─ database_overview.md
 
-```
-1,8,10,11,14,17
+---
