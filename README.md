@@ -9,6 +9,12 @@
 ![ER Modeling](https://img.shields.io/badge/ER-Modeling-0A66C2)
 ![3NF](https://img.shields.io/badge/3NF-Normalization-6A1B9A)
 
+---
+
+This project demonstrates practical SQL database design and deployment of a database-driven web application on AWS EC2.
+
+---
+
 This repository demonstrates both:
 
 - 📐 Relational database design (3NF, PK/FK, ISA, M:N)
@@ -21,7 +27,7 @@ It bridges database theory and production-style deployment.
 # 📁 Project: TradingDB – Relational Database & AWS Application
 
 ## 🔍 Overview
-
+****
 A simulated financial trading database managing:
 
 - Clients
